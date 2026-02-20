@@ -42,3 +42,21 @@ git annotate indice.txt
 ```
 
 ![descripcion](asd.png)
+
+# Deshacer cambios
+
+## Ejercicio 1
+1. Eliminar la última línea del fichero `indice.txt` y guardarlo.
+2. Comprobar el estado del repositorio.
+3. Deshacer los cambios realizados en el fichero `indice.txt` para volver a la versión anterior del fichero.
+4. Volver a comprobar el estado del repositorio.
+
+## Sol:
+```bash
+nano indice.txt
+git status
+git checkout -- indice.txt
+git status
+```
+
+![descripcion](qwe.png)
