@@ -60,3 +60,25 @@ git status
 ```
 
 ![descripcion](qwe.png)
+
+## Ejercicio 2
+1. Eliminar la última línea del fichero `indice.txt` y guardarlo.
+2. Añadir los cambios a la zona de intercambio temporal.
+3. Comprobar de nuevo el estado del repositorio.
+4. Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+5. Comprobar de nuevo el estado del repositorio.
+6. Deshacer los cambios realizados en el fichero `indice.txt` para volver a la versión anterior del fichero.
+7. Volver a comprobar el estado del repositorio.
+
+## Sol:
+```bash
+nano indice.txt
+git add .
+git status
+git reset indice.txt
+git status
+git checkout -- indice.txt
+git status
+```
+
+![descripcion](zxc.png)
