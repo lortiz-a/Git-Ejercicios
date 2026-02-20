@@ -10,3 +10,24 @@ git config --global color.ui auto
 git config --list
 ...
 
+
+
+# Ejercicio 3
+### 1.Crear el fichero capitulo3.txt en la carpeta capitulos con el siguiente texto. 
+Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
+
+### 2.Añadir los cambios a la zona de intercambio temporal.
+### 3.Hacer un commit de los cambios con el mensaje “Añadido capítulo 3.”
+### 4.Mostrar las diferencias entre la primera y la última versión del repositorio.
+...
+    bash
+    > cat > capitulos/capitulo3.txt
+Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
+Ctrl+D
+> git add .
+> git commit -m "Añadido capítulo 3."
+> git log
+> git diff &lt;codigo hash de la primera version>..HEAD
+...
+
+![descripción](image.png)
