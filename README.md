@@ -82,3 +82,29 @@ git status
 ```
 
 ![descripcion](zxc.png)
+
+Ejercicio 3
+Eliminar la última línea del fichero indice.txt y guardarlo.
+Eliminar el fichero capitulos/capitulo3.txt.
+Añadir un fichero nuevo captitulos/capitulo4.txt vacío.
+Añadir los cambios a la zona de intercambio temporal.
+Comprobar de nuevo el estado del repositorio.
+Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+Comprobar de nuevo el estado del repositorio.
+Deshacer los cambios realizados para volver a la versión del repositorio.
+Volver a comprobar el estado del repositorio.
+
+> nano indice.txt
+# Eliminar la última línea y guardar el fichero.
+> rm capitulos/capitulo3.txt
+> touch capitulos/capitulo4.txt
+> git add .
+> git status
+> git reset
+> git status
+> git checkout -- .
+> git status
+> git clean -f
+> git status
+
+![descripcion](ghh.png)
