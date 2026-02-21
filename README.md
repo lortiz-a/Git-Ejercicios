@@ -110,3 +110,33 @@ git status
 ```
 
 ![descripcion](ghh.png)
+
+## Ejercicio 4
+1. Eliminar la última línea del fichero `indice.txt` y guardarlo.
+2. Eliminar el fichero `capitulos/capitulo3.txt`.
+3. Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje "Borrado accidental."
+4. Comprobar el historial del repositorio.
+5. Deshacer el último commit pero mantener los cambios anteriores en el directorio de trabajo y la zona de intercambio temporal.
+6. Comprobar el historial y el estado del repositorio.
+7. Volver a hacer el commit con el mismo mensaje de antes.
+8. Deshacer el último commit y los cambios anteriores del directorio de trabajo volviendo a la versión anterior del repositorio.
+9. Comprobar de nuevo el historial y el estado del repositorio.
+
+## Sol:
+```bash
+nano indice.txt
+rm capitulos/capitulo3.txt
+git add .
+git commit -m "Borrado accidental."
+git log
+git reset --soft HEAD~1
+git status
+git commit -m "Borrado accidental."
+git status
+git log
+git reset --hard HEAD~1
+git log
+git status
+```
+
+![descripcion](ppp.png)
